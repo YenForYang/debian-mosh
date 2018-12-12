@@ -1,0 +1,727 @@
+ dpkg-buildpackage -D -us -uc -ui -b -Jauto -Pnobiarch,nocheck,nodoc
+dpkg-buildpackage: info: source package mosh
+dpkg-buildpackage: info: source version 1.3.2-2
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Keith Winstein <keithw@mit.edu>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --parallel --with autoreconf
+   dh_auto_clean -O--parallel
+	make -j8 distclean
+make[1]: Entering directory '/dev/shm/mosh/mosh'
+Making distclean in scripts
+make[2]: Entering directory '/dev/shm/mosh/mosh/scripts'
+test -z "mosh" || rm -f mosh
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[2]: Leaving directory '/dev/shm/mosh/mosh/scripts'
+Making distclean in src
+make[2]: Entering directory '/dev/shm/mosh/mosh/src'
+Making distclean in protobufs
+make[3]: Entering directory '/dev/shm/mosh/mosh/src/protobufs'
+test -z "userinput.pb.cc hostinput.pb.cc transportinstruction.pb.cc userinput.pb.h hostinput.pb.h transportinstruction.pb.h" || rm -f userinput.pb.cc hostinput.pb.cc transportinstruction.pb.cc userinput.pb.h hostinput.pb.h transportinstruction.pb.h
+test -z "libmoshprotos.a" || rm -f libmoshprotos.a
+rm -f *.o
+rm -f *.tab.c
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+rm -f ./.deps/hostinput.pb.Po
+rm -f ./.deps/transportinstruction.pb.Po
+rm -f ./.deps/userinput.pb.Po
+rm -f Makefile
+make[3]: Leaving directory '/dev/shm/mosh/mosh/src/protobufs'
+Making distclean in util
+make[3]: Entering directory '/dev/shm/mosh/mosh/src/util'
+test -z "libmoshutil.a" || rm -f libmoshutil.a
+rm -f *.o
+rm -f *.tab.c
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+rm -f ./.deps/locale_utils.Po
+rm -f ./.deps/pty_compat.Po
+rm -f ./.deps/select.Po
+rm -f ./.deps/swrite.Po
+rm -f ./.deps/timestamp.Po
+rm -f Makefile
+make[3]: Leaving directory '/dev/shm/mosh/mosh/src/util'
+Making distclean in crypto
+make[3]: Entering directory '/dev/shm/mosh/mosh/src/crypto'
+test -z "libmoshcrypto.a" || rm -f libmoshcrypto.a
+rm -f *.o
+rm -f *.tab.c
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+rm -f ./.deps/base64.Po
+rm -f ./.deps/crypto.Po
+rm -f ./.deps/ocb.Po
+rm -f Makefile
+make[3]: Leaving directory '/dev/shm/mosh/mosh/src/crypto'
+Making distclean in terminal
+make[3]: Entering directory '/dev/shm/mosh/mosh/src/terminal'
+test -z "libmoshterminal.a" || rm -f libmoshterminal.a
+rm -f *.o
+rm -f *.tab.c
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+rm -f ./.deps/parser.Po
+rm -f ./.deps/parseraction.Po
+rm -f ./.deps/parserstate.Po
+rm -f ./.deps/terminal.Po
+rm -f ./.deps/terminaldispatcher.Po
+rm -f ./.deps/terminaldisplay.Po
+rm -f ./.deps/terminaldisplayinit.Po
+rm -f ./.deps/terminalframebuffer.Po
+rm -f ./.deps/terminalfunctions.Po
+rm -f ./.deps/terminaluserinput.Po
+rm -f Makefile
+make[3]: Leaving directory '/dev/shm/mosh/mosh/src/terminal'
+Making distclean in network
+make[3]: Entering directory '/dev/shm/mosh/mosh/src/network'
+test -z "libmoshnetwork.a" || rm -f libmoshnetwork.a
+rm -f *.o
+rm -f *.tab.c
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+rm -f ./.deps/compressor.Po
+rm -f ./.deps/network.Po
+rm -f ./.deps/transportfragment.Po
+rm -f Makefile
+make[3]: Leaving directory '/dev/shm/mosh/mosh/src/network'
+Making distclean in statesync
+make[3]: Entering directory '/dev/shm/mosh/mosh/src/statesync'
+test -z "libmoshstatesync.a" || rm -f libmoshstatesync.a
+rm -f *.o
+rm -f *.tab.c
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+rm -f ./.deps/completeterminal.Po
+rm -f ./.deps/user.Po
+rm -f Makefile
+make[3]: Leaving directory '/dev/shm/mosh/mosh/src/statesync'
+Making distclean in frontend
+make[3]: Entering directory '/dev/shm/mosh/mosh/src/frontend'
+test -z "mosh-client mosh-server" || rm -f mosh-client mosh-server
+rm -f *.o
+rm -f *.tab.c
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+rm -f ./.deps/mosh-client.Po
+rm -f ./.deps/mosh-server.Po
+rm -f ./.deps/stmclient.Po
+rm -f ./.deps/terminaloverlay.Po
+rm -f Makefile
+make[3]: Leaving directory '/dev/shm/mosh/mosh/src/frontend'
+Making distclean in examples
+make[3]: Entering directory '/dev/shm/mosh/mosh/src/examples'
+test -z "" || rm -f 
+rm -f *.o
+rm -f *.tab.c
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+rm -f ./.deps/benchmark-benchmark.Po
+rm -f ./.deps/decrypt-decrypt.Po
+rm -f ./.deps/encrypt-encrypt.Po
+rm -f ./.deps/ntester-ntester.Po
+rm -f ./.deps/parse-parse.Po
+rm -f ./.deps/termemu-termemu.Po
+rm -f Makefile
+make[3]: Leaving directory '/dev/shm/mosh/mosh/src/examples'
+Making distclean in tests
+make[3]: Entering directory '/dev/shm/mosh/mosh/src/tests'
+test -z "ocb-aes encrypt-decrypt base64 nonce-incr inpty is-utf8-locale" || rm -f ocb-aes encrypt-decrypt base64 nonce-incr inpty is-utf8-locale
+test -z "base64_vector.cc" || rm -f base64_vector.cc
+for i in e2e-success.test e2e-failure.test emulation-ascii-iso-8859.test emulation-80th-column.test emulation-attributes-vt100.test emulation-attributes-16color.test emulation-attributes-256color8.test emulation-attributes-256color248.test emulation-attributes-truecolor.test emulation-attributes-bce.test emulation-back-tab.test emulation-cursor-motion.test emulation-multiline-scroll.test emulation-scroll.test emulation-wrap-across-frames.test network-no-diff.test prediction-unicode.test pty-deadlock.test repeat.test repeat-with-input.test server-network-timeout.test server-signal-timeout.test window-resize.test unicode-combine-fallback-assert.test unicode-later-combining.test window-resize.test; do rm -rf $i.d/; done
+rm -f *.o
+test -z "ocb-aes.log encrypt-decrypt.log base64.log nonce-incr.log local.log e2e-success.log e2e-failure.log emulation-ascii-iso-8859.log emulation-80th-column.log emulation-attributes-vt100.log emulation-attributes-16color.log emulation-attributes-256color8.log emulation-attributes-256color248.log emulation-attributes-truecolor.log emulation-attributes-bce.log emulation-back-tab.log emulation-cursor-motion.log emulation-multiline-scroll.log emulation-scroll.log emulation-wrap-across-frames.log network-no-diff.log prediction-unicode.log pty-deadlock.log repeat.log repeat-with-input.log server-network-timeout.log server-signal-timeout.log window-resize.log unicode-combine-fallback-assert.log unicode-later-combining.log window-resize.log" || rm -f ocb-aes.log encrypt-decrypt.log base64.log nonce-incr.log local.log e2e-success.log e2e-failure.log emulation-ascii-iso-8859.log emulation-80th-column.log emulation-attributes-vt100.log emulation-attributes-16color.log emulation-attributes-256color8.log emulation-attributes-256color248.log emulation-attributes-truecolor.log emulation-attributes-bce.log emulation-back-tab.log emulation-cursor-motion.log emulation-multiline-scroll.log emulation-scroll.log emulation-wrap-across-frames.log network-no-diff.log prediction-unicode.log pty-deadlock.log repeat.log repeat-with-input.log server-network-timeout.log server-signal-timeout.log window-resize.log unicode-combine-fallback-assert.log unicode-later-combining.log window-resize.log
+rm -f *.tab.c
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+test -z "ocb-aes.trs encrypt-decrypt.trs base64.trs nonce-incr.trs local.trs e2e-success.trs e2e-failure.trs emulation-ascii-iso-8859.trs emulation-80th-column.trs emulation-attributes-vt100.trs emulation-attributes-16color.trs emulation-attributes-256color8.trs emulation-attributes-256color248.trs emulation-attributes-truecolor.trs emulation-attributes-bce.trs emulation-back-tab.trs emulation-cursor-motion.trs emulation-multiline-scroll.trs emulation-scroll.trs emulation-wrap-across-frames.trs network-no-diff.trs prediction-unicode.trs pty-deadlock.trs repeat.trs repeat-with-input.trs server-network-timeout.trs server-signal-timeout.trs window-resize.trs unicode-combine-fallback-assert.trs unicode-later-combining.trs window-resize.trs" || rm -f ocb-aes.trs encrypt-decrypt.trs base64.trs nonce-incr.trs local.trs e2e-success.trs e2e-failure.trs emulation-ascii-iso-8859.trs emulation-80th-column.trs emulation-attributes-vt100.trs emulation-attributes-16color.trs emulation-attributes-256color8.trs emulation-attributes-256color248.trs emulation-attributes-truecolor.trs emulation-attributes-bce.trs emulation-back-tab.trs emulation-cursor-motion.trs emulation-multiline-scroll.trs emulation-scroll.trs emulation-wrap-across-frames.trs network-no-diff.trs prediction-unicode.trs pty-deadlock.trs repeat.trs repeat-with-input.trs server-network-timeout.trs server-signal-timeout.trs window-resize.trs unicode-combine-fallback-assert.trs unicode-later-combining.trs window-resize.trs
+test -z "test-suite.log" || rm -f test-suite.log
+rm -f ./.deps/base64-base64.Po
+rm -f ./.deps/base64-base64_vector.Po
+rm -f ./.deps/encrypt_decrypt-encrypt-decrypt.Po
+rm -f ./.deps/encrypt_decrypt-test_utils.Po
+rm -f ./.deps/inpty-inpty.Po
+rm -f ./.deps/is_utf8_locale-is-utf8-locale.Po
+rm -f ./.deps/nonce_incr-nonce-incr.Po
+rm -f ./.deps/ocb_aes-ocb-aes.Po
+rm -f ./.deps/ocb_aes-test_utils.Po
+rm -f Makefile
+make[3]: Leaving directory '/dev/shm/mosh/mosh/src/tests'
+make[3]: Entering directory '/dev/shm/mosh/mosh/src'
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+make[3]: Leaving directory '/dev/shm/mosh/mosh/src'
+rm -f Makefile
+make[2]: Leaving directory '/dev/shm/mosh/mosh/src'
+Making distclean in man
+make[2]: Entering directory '/dev/shm/mosh/mosh/man'
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[2]: Leaving directory '/dev/shm/mosh/mosh/man'
+Making distclean in conf
+make[2]: Entering directory '/dev/shm/mosh/mosh/conf'
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[2]: Leaving directory '/dev/shm/mosh/mosh/conf'
+make[2]: Entering directory '/dev/shm/mosh/mosh'
+test -z "" || rm -f 
+rm -f config.h stamp-h1
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+rm -f cscope.out cscope.in.out cscope.po.out cscope.files
+make[2]: Leaving directory '/dev/shm/mosh/mosh'
+rm -f config.status config.cache config.log configure.lineno config.status.lineno
+rm -f Makefile
+make[1]: Leaving directory '/dev/shm/mosh/mosh'
+   dh_autoreconf_clean -O--parallel
+   dh_clean -O--parallel
+FAKEROOTKEY=463803688 LD_LIBRARY_PATH=:/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules clean
+ debian/rules build
+dh build --parallel --with autoreconf
+   dh_update_autotools_config -O--parallel
+   dh_autoreconf -O--parallel
+configure.ac:21: installing './ar-lib'
+configure.ac:13: installing './compile'
+configure.ac:6: installing './install-sh'
+configure.ac:6: installing './missing'
+src/crypto/Makefile.am: installing './depcomp'
+parallel-tests: installing './test-driver'
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/dev/shm/mosh/mosh'
+dh_auto_configure -- \
+	--disable-silent-rules \
+	--enable-ufw \
+	--enable-completion \
+	--enable-compile-warnings=yes
+	./configure --build=x86_64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --disable-silent-rules --libdir=\${prefix}/lib/x86_64-linux-gnu --libexecdir=\${prefix}/lib/x86_64-linux-gnu --disable-maintainer-mode --disable-dependency-tracking --disable-silent-rules --enable-ufw --enable-completion --enable-compile-warnings=yes
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports nested variables... (cached) yes
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether icc accepts -g... (cached) yes
+checking for icc option to accept ISO C89... none needed
+checking whether icc understands -c and -o together... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of icc... (cached) gcc3
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether icpc accepts -g... (cached) yes
+checking dependency style of icpc... (cached) gcc3
+checking for ranlib... (cached) /usr/bin/x86_64-linux-gnu-ranlib
+checking for protoc... /usr/bin/protoc
+checking the archiver (xiar) interface... ar
+checking whether icpc supports C++11 features with -std=c++11... yes
+checking whether C compiler accepts -fno-strict-overflow... yes
+checking whether C++ compiler accepts -fno-strict-overflow... yes
+checking whether C compiler accepts -D_FORTIFY_SOURCE=2... yes
+checking whether C++ compiler accepts -D_FORTIFY_SOURCE=2... yes
+checking whether the linker accepts -fstack-protector-all... yes
+checking whether C compiler accepts -Wstack-protector... yes
+checking whether C++ compiler accepts -Wstack-protector... yes
+checking whether C compiler accepts --param ssp-buffer-size=1... yes
+checking whether C++ compiler accepts --param ssp-buffer-size=1... yes
+checking whether C compiler accepts -fPIE... yes
+checking whether C++ compiler accepts -fPIE... yes
+checking whether the linker accepts -fPIE -pie... yes
+checking whether the linker accepts -Wl,-z,relro... yes
+checking whether the linker accepts -Wl,-z,now... yes
+checking whether C++ compiler accepts -fno-default-inline... yes
+checking whether C++ compiler accepts -pipe... yes
+checking for library containing utempter_remove_record... -lutempter
+checking how to run the C preprocessor... icc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for library containing compress... -lz
+checking for library containing socket... none required
+checking for library containing inet_addr... none required
+checking for library containing clock_gettime... none required
+checking for fcntl.h... (cached) yes
+checking for langinfo.h... (cached) yes
+checking for limits.h... (cached) yes
+checking for locale.h... (cached) yes
+checking for netdb.h... (cached) yes
+checking for netinet/in.h... (cached) yes
+checking for stddef.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/ioctl.h... (cached) yes
+checking for sys/resource.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for termios.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... (cached) yes
+checking for wctype.h... (cached) yes
+checking for pty.h... (cached) yes
+checking util.h usability... no
+checking util.h presence... no
+checking for util.h... no
+checking libutil.h usability... no
+checking libutil.h presence... no
+checking for libutil.h... no
+checking for paths.h... (cached) yes
+checking for endian.h... (cached) yes
+checking sys/endian.h usability... no
+checking sys/endian.h presence... no
+checking for sys/endian.h... no
+checking for utmpx.h... (cached) yes
+checking for termio.h... (cached) yes
+checking for sys/uio.h... (cached) yes
+checking how to run the C++ preprocessor... icpc -E -std=c++11
+checking memory usability... yes
+checking memory presence... yes
+checking for memory... yes
+checking tr1/memory usability... yes
+checking tr1/memory presence... yes
+checking for tr1/memory... yes
+checking for stdbool.h that conforms to C99... (cached) yes
+checking for _Bool... (cached) yes
+checking for inline... (cached) inline
+checking for int64_t... yes
+checking for pid_t... (cached) yes
+checking for C/C++ restrict keyword... (cached) __restrict
+checking for size_t... (cached) yes
+checking for ssize_t... (cached) yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for uint8_t... yes
+checking for uintptr_t... (cached) yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... (cached) yes
+checking for vfork... (cached) yes
+checking for working fork... (cached) yes
+checking for working vfork... (cached) yes
+checking whether mbrtowc and mbstate_t are properly declared... (cached) yes
+checking for gettimeofday... (cached) yes
+checking for setrlimit... (cached) yes
+checking for iswprint... (cached) yes
+checking for memchr... (cached) yes
+checking for memset... (cached) yes
+checking for nl_langinfo... (cached) yes
+checking for posix_memalign... (cached) yes
+checking for setenv... (cached) yes
+checking for setlocale... (cached) yes
+checking for sigaction... (cached) yes
+checking for socket... (cached) yes
+checking for strchr... (cached) yes
+checking for strdup... (cached) yes
+checking for strncasecmp... (cached) yes
+checking for strtok... yes
+checking for strerror... (cached) yes
+checking for strtol... (cached) yes
+checking for wcwidth... (cached) yes
+checking for cfmakeraw... (cached) yes
+checking for pselect... (cached) yes
+checking for getaddrinfo... (cached) yes
+checking for getnameinfo... (cached) yes
+checking for pledge... no
+checking pkg-config is at least version 0.9.0... yes
+checking for TINFO... yes
+checking CommonCrypto/CommonCrypto.h usability... no
+checking CommonCrypto/CommonCrypto.h presence... no
+checking for CommonCrypto/CommonCrypto.h... no
+checking for CRYPTO... yes
+checking whether forkpty is declared... no
+checking for library containing forkpty... (cached) -lutil
+checking whether pipe2(..., O_CLOEXEC) is supported... yes
+checking whether FD_ISSET() argument is const... yes
+checking whether std::shared_ptr is available... yes
+checking whether std::tr1::shared_ptr is available... yes
+checking whether clock_gettime() is supported... yes
+checking whether mach_absolute_time is declared... no
+checking whether __builtin_ctz is declared... yes
+checking whether ffs is declared... (cached) yes
+checking whether be64toh is declared... yes
+checking whether betoh64 is declared... no
+checking whether bswap64 is declared... no
+checking whether __builtin_bswap64 is declared... yes
+checking whether IP_MTU_DISCOVER is declared... yes
+checking whether IP_RECVTOS is declared... yes
+checking whether __STDC_ISO_10646__ is declared... yes
+checking whether IUTF8 is declared... yes
+checking for protobuf... yes
+checking for BASH_COMPLETION... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/crypto/Makefile
+config.status: creating src/frontend/Makefile
+config.status: creating src/network/Makefile
+config.status: creating src/protobufs/Makefile
+config.status: creating src/statesync/Makefile
+config.status: creating src/terminal/Makefile
+config.status: creating src/util/Makefile
+config.status: creating scripts/Makefile
+config.status: creating src/examples/Makefile
+config.status: creating src/tests/Makefile
+config.status: creating man/Makefile
+config.status: creating conf/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+configure:  === Configuration results ===
+configure: Version:             1.3.2
+configure: c++ compiler:        icpc -std=c++11
+configure: Warning CXXFLAGS:    -Wall
+configure: Picky CXXFLAGS:      
+configure: Harden CFLAGS:        -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE
+configure:  =============================
+make[1]: Leaving directory '/dev/shm/mosh/mosh'
+   dh_auto_build -O--parallel
+	make -j8
+make[1]: Entering directory '/dev/shm/mosh/mosh'
+make  all-recursive
+make[2]: Entering directory '/dev/shm/mosh/mosh'
+Making all in scripts
+make[3]: Entering directory '/dev/shm/mosh/mosh/scripts'
+perl -Mdiagnostics -c ./mosh.pl
+./mosh.pl syntax OK
+make[3]: Leaving directory '/dev/shm/mosh/mosh/scripts'
+Making all in src
+make[3]: Entering directory '/dev/shm/mosh/mosh/src'
+Making all in protobufs
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/protobufs'
+/usr/bin/protoc --cpp_out=. -I. userinput.proto
+/usr/bin/protoc --cpp_out=. -I. hostinput.proto
+/usr/bin/protoc --cpp_out=. -I. transportinstruction.proto
+make  all-am
+make[5]: Entering directory '/dev/shm/mosh/mosh/src/protobufs'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -Wno-error -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o userinput.pb.o userinput.pb.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -Wno-error -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o hostinput.pb.o hostinput.pb.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -Wno-error -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o transportinstruction.pb.o transportinstruction.pb.cc
+rm -f libmoshprotos.a
+xiar cru libmoshprotos.a  userinput.pb.o hostinput.pb.o transportinstruction.pb.o  
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+/usr/bin/x86_64-linux-gnu-ranlib libmoshprotos.a
+make[5]: Leaving directory '/dev/shm/mosh/mosh/src/protobufs'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/protobufs'
+Making all in util
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/util'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o locale_utils.o locale_utils.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o swrite.o swrite.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o select.o select.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o timestamp.o timestamp.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o pty_compat.o pty_compat.cc
+rm -f libmoshutil.a
+xiar cru libmoshutil.a locale_utils.o swrite.o select.o timestamp.o pty_compat.o 
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+/usr/bin/x86_64-linux-gnu-ranlib libmoshutil.a
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/util'
+Making all in crypto
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/crypto'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o ocb.o ocb.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o base64.o base64.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o crypto.o crypto.cc
+rm -f libmoshcrypto.a
+xiar cru libmoshcrypto.a ocb.o base64.o crypto.o 
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+/usr/bin/x86_64-linux-gnu-ranlib libmoshcrypto.a
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/crypto'
+Making all in terminal
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/terminal'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o parseraction.o parseraction.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o parser.o parser.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o parserstate.o parserstate.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminal.o terminal.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminaldispatcher.o terminaldispatcher.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminaldisplay.o terminaldisplay.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminaldisplayinit.o terminaldisplayinit.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminalframebuffer.o terminalframebuffer.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminalfunctions.o terminalfunctions.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminaluserinput.o terminaluserinput.cc
+rm -f libmoshterminal.a
+xiar cru libmoshterminal.a parseraction.o parser.o parserstate.o terminal.o terminaldispatcher.o terminaldisplay.o terminaldisplayinit.o terminalframebuffer.o terminalfunctions.o terminaluserinput.o 
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+/usr/bin/x86_64-linux-gnu-ranlib libmoshterminal.a
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/terminal'
+Making all in network
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/network'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../crypto -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o network.o network.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../crypto -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o transportfragment.o transportfragment.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../crypto -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o compressor.o compressor.cc
+rm -f libmoshnetwork.a
+xiar cru libmoshnetwork.a network.o transportfragment.o compressor.o 
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+/usr/bin/x86_64-linux-gnu-ranlib libmoshnetwork.a
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/network'
+Making all in statesync
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/statesync'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../terminal -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o completeterminal.o completeterminal.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../terminal -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o user.o user.cc
+rm -f libmoshstatesync.a
+xiar cru libmoshstatesync.a completeterminal.o user.o 
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+/usr/bin/x86_64-linux-gnu-ranlib libmoshstatesync.a
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/statesync'
+Making all in frontend
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/frontend'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../statesync -I./../terminal -I./../network -I./../crypto -I../protobufs -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -pthread  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o mosh-client.o mosh-client.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../statesync -I./../terminal -I./../network -I./../crypto -I../protobufs -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -pthread  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o stmclient.o stmclient.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../statesync -I./../terminal -I./../network -I./../crypto -I../protobufs -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -pthread  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminaloverlay.o terminaloverlay.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../statesync -I./../terminal -I./../network -I./../crypto -I../protobufs -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -pthread  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o mosh-server.o mosh-server.cc
+icpc -std=c++11 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -pie -Wl,-z,relro -Wl,-z,now -Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax -o mosh-client mosh-client.o stmclient.o terminaloverlay.o ../crypto/libmoshcrypto.a ../network/libmoshnetwork.a ../statesync/libmoshstatesync.a ../terminal/libmoshterminal.a ../util/libmoshutil.a ../protobufs/libmoshprotos.a -lm -ltinfo -lprotobuf -pthread -lssl -lcrypto -lutil -lz -lutempter 
+icpc -std=c++11 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -pie -Wl,-z,relro -Wl,-z,now -Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax -o mosh-server mosh-server.o ../crypto/libmoshcrypto.a ../network/libmoshnetwork.a ../statesync/libmoshstatesync.a ../terminal/libmoshterminal.a ../util/libmoshutil.a ../protobufs/libmoshprotos.a -lm -ltinfo -lprotobuf -pthread -lssl -lcrypto -lutil -lz -lutempter 
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/frontend'
+Making all in examples
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/examples'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/examples'
+Making all in tests
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/tests'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/tests'
+make[4]: Entering directory '/dev/shm/mosh/mosh/src'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src'
+make[3]: Leaving directory '/dev/shm/mosh/mosh/src'
+Making all in man
+make[3]: Entering directory '/dev/shm/mosh/mosh/man'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/dev/shm/mosh/mosh/man'
+Making all in conf
+make[3]: Entering directory '/dev/shm/mosh/mosh/conf'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/dev/shm/mosh/mosh/conf'
+make[3]: Entering directory '/dev/shm/mosh/mosh'
+make[3]: Leaving directory '/dev/shm/mosh/mosh'
+make[2]: Leaving directory '/dev/shm/mosh/mosh'
+make[1]: Leaving directory '/dev/shm/mosh/mosh'
+   dh_auto_test -O--parallel
+ fakeroot debian/rules binary
+dh binary --parallel --with autoreconf
+   dh_auto_test -O--parallel
+   dh_testroot -O--parallel
+   dh_prep -O--parallel
+   dh_installdirs -O--parallel
+   dh_auto_install -O--parallel
+	make -j8 install DESTDIR=/dev/shm/mosh/mosh/debian/mosh AM_UPDATE_INFO_DIR=no
+make[1]: Entering directory '/dev/shm/mosh/mosh'
+make  install-recursive
+make[2]: Entering directory '/dev/shm/mosh/mosh'
+Making install in scripts
+make[3]: Entering directory '/dev/shm/mosh/mosh/scripts'
+make[4]: Entering directory '/dev/shm/mosh/mosh/scripts'
+make[4]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/dev/shm/mosh/mosh/debian/mosh/usr/bin'
+ /usr/bin/install mosh '/dev/shm/mosh/mosh/debian/mosh/usr/bin'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/scripts'
+make[3]: Leaving directory '/dev/shm/mosh/mosh/scripts'
+Making install in src
+make[3]: Entering directory '/dev/shm/mosh/mosh/src'
+Making install in protobufs
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/protobufs'
+make  install-am
+make[5]: Entering directory '/dev/shm/mosh/mosh/src/protobufs'
+make[6]: Entering directory '/dev/shm/mosh/mosh/src/protobufs'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/dev/shm/mosh/mosh/src/protobufs'
+make[5]: Leaving directory '/dev/shm/mosh/mosh/src/protobufs'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/protobufs'
+Making install in util
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/util'
+make[5]: Entering directory '/dev/shm/mosh/mosh/src/util'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/dev/shm/mosh/mosh/src/util'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/util'
+Making install in crypto
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/crypto'
+make[5]: Entering directory '/dev/shm/mosh/mosh/src/crypto'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/dev/shm/mosh/mosh/src/crypto'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/crypto'
+Making install in terminal
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/terminal'
+make[5]: Entering directory '/dev/shm/mosh/mosh/src/terminal'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/dev/shm/mosh/mosh/src/terminal'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/terminal'
+Making install in network
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/network'
+make[5]: Entering directory '/dev/shm/mosh/mosh/src/network'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/dev/shm/mosh/mosh/src/network'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/network'
+Making install in statesync
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/statesync'
+make[5]: Entering directory '/dev/shm/mosh/mosh/src/statesync'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/dev/shm/mosh/mosh/src/statesync'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/statesync'
+Making install in frontend
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/frontend'
+make[5]: Entering directory '/dev/shm/mosh/mosh/src/frontend'
+make[5]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/dev/shm/mosh/mosh/debian/mosh/usr/bin'
+  /usr/bin/install mosh-client mosh-server '/dev/shm/mosh/mosh/debian/mosh/usr/bin'
+make[5]: Leaving directory '/dev/shm/mosh/mosh/src/frontend'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/frontend'
+Making install in examples
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/examples'
+make[5]: Entering directory '/dev/shm/mosh/mosh/src/examples'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/dev/shm/mosh/mosh/src/examples'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/examples'
+Making install in tests
+make[4]: Entering directory '/dev/shm/mosh/mosh/src/tests'
+make[5]: Entering directory '/dev/shm/mosh/mosh/src/tests'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/dev/shm/mosh/mosh/src/tests'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src/tests'
+make[4]: Entering directory '/dev/shm/mosh/mosh/src'
+make[5]: Entering directory '/dev/shm/mosh/mosh/src'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/dev/shm/mosh/mosh/src'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/src'
+make[3]: Leaving directory '/dev/shm/mosh/mosh/src'
+Making install in man
+make[3]: Entering directory '/dev/shm/mosh/mosh/man'
+make[4]: Entering directory '/dev/shm/mosh/mosh/man'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/dev/shm/mosh/mosh/debian/mosh/usr/share/man/man1'
+ /usr/bin/install -m 644 mosh.1 mosh-client.1 mosh-server.1 '/dev/shm/mosh/mosh/debian/mosh/usr/share/man/man1'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/man'
+make[3]: Leaving directory '/dev/shm/mosh/mosh/man'
+Making install in conf
+make[3]: Entering directory '/dev/shm/mosh/mosh/conf'
+make[4]: Entering directory '/dev/shm/mosh/mosh/conf'
+ /bin/mkdir -p '/dev/shm/mosh/mosh/debian/mosh/etc'
+ /bin/mkdir -p '/dev/shm/mosh/mosh/debian/mosh/usr/share/bash-completion/completions'
+ /usr/bin/install -m 644 bash-completion/completions/mosh '/dev/shm/mosh/mosh/debian/mosh/usr/share/bash-completion/completions'
+ /bin/mkdir -p '/dev/shm/mosh/mosh/debian/mosh/etc/ufw/applications.d'
+ /usr/bin/install -m 644  ufw/applications.d/mosh '/dev/shm/mosh/mosh/debian/mosh/etc/ufw/applications.d'
+make[4]: Leaving directory '/dev/shm/mosh/mosh/conf'
+make[3]: Leaving directory '/dev/shm/mosh/mosh/conf'
+make[3]: Entering directory '/dev/shm/mosh/mosh'
+make[4]: Entering directory '/dev/shm/mosh/mosh'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/dev/shm/mosh/mosh'
+make[3]: Leaving directory '/dev/shm/mosh/mosh'
+make[2]: Leaving directory '/dev/shm/mosh/mosh'
+make[1]: Leaving directory '/dev/shm/mosh/mosh'
+   dh_install -O--parallel
+   dh_installdocs -O--parallel
+   dh_installchangelogs -O--parallel
+   dh_installexamples -O--parallel
+   dh_installman -O--parallel
+   dh_installcatalogs -O--parallel
+   dh_installcron -O--parallel
+   dh_installdebconf -O--parallel
+   dh_installemacsen -O--parallel
+   dh_installifupdown -O--parallel
+   dh_installinfo -O--parallel
+   dh_installinit -O--parallel
+   dh_installmenu -O--parallel
+   dh_installmime -O--parallel
+   dh_installmodules -O--parallel
+   dh_installlogcheck -O--parallel
+   dh_installlogrotate -O--parallel
+   dh_installpam -O--parallel
+   dh_installppp -O--parallel
+   dh_installudev -O--parallel
+   dh_installgsettings -O--parallel
+   dh_bugfiles -O--parallel
+   dh_ucf -O--parallel
+   dh_lintian -O--parallel
+   dh_gconf -O--parallel
+dh_gconf: Please migrate to dh_installgsettings; gconf + dh_gconf is scheduled for removal.
+   dh_icons -O--parallel
+   debian/rules override_dh_perl
+make[1]: Entering directory '/dev/shm/mosh/mosh'
+# mosh only uses Perl modules in perl-base.
+dh_perl -d
+make[1]: Leaving directory '/dev/shm/mosh/mosh'
+   dh_usrlocal -O--parallel
+   dh_link -O--parallel
+   dh_installwm -O--parallel
+   dh_installxfonts -O--parallel
+   dh_strip_nondeterminism -O--parallel
+   dh_compress -O--parallel
+   dh_fixperms -O--parallel
+   dh_missing -O--parallel
+   dh_strip -O--parallel
+   dh_makeshlibs -O--parallel
+   dh_shlibdeps -O--parallel
+dpkg-shlibdeps: warning: deprecated use of LD_LIBRARY_PATH with private library directory which interferes with cross-building, please use -l option instead
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/mosh/usr/bin/mosh-client debian/mosh/usr/bin/mosh-server were not linked against libdl.so.2 (they use none of the library's symbols)
+   dh_installdeb -O--parallel
+   dh_gencontrol -O--parallel
+   dh_md5sums -O--parallel
+   dh_builddeb -O--parallel
+dpkg-deb: building package 'mosh' in '../mosh_1.3.2-2_amd64.deb'.
+dpkg-deb: building package 'mosh-dbgsym' in '../mosh-dbgsym_1.3.2-2_amd64.deb'.
+FAKEROOTKEY=931255088 LD_LIBRARY_PATH=:/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules binary
+ dpkg-genbuildinfo --build=binary
+ dpkg-genchanges --build=binary >../mosh_1.3.2-2_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now running lintian mosh_1.3.2-2_amd64.changes ...
+E: mosh: wrong-path-for-interpreter usr/bin/mosh (#!/usr/bin/env perl != /usr/bin/perl)
+Finished running lintian.
