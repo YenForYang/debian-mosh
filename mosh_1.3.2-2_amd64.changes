@@ -18,14 +18,14 @@ Changes:
    * Fix "mosh FTBFS with gcc 7" <remove default constructors>
      (Closes: #871030)
 Checksums-Sha1:
- 82c1d4d15f5917dfa6dc91ec05d185f34f2f296c 2422372 mosh-dbgsym_1.3.2-2_amd64.deb
- 5a75fb96253d07f4b91460ce27b507e41337bf0e 5714 mosh_1.3.2-2_amd64.buildinfo
- 9c024a2d077b114a75a5cf8c066c0f8e75da85ed 279796 mosh_1.3.2-2_amd64.deb
+ d382ba385703d99fe0ee32d13359b9af5e43a8a9 2424808 mosh-dbgsym_1.3.2-2_amd64.deb
+ bfad1f22b6ce290409d3a845af43796a23fd2221 5730 mosh_1.3.2-2_amd64.buildinfo
+ a38ec9597447993f58767473c00a4985810252af 281624 mosh_1.3.2-2_amd64.deb
 Checksums-Sha256:
- 8fa864c2f89a4a027dc8ae33fbb04d6138018d32b656a9d40d7085cfb8d47392 2422372 mosh-dbgsym_1.3.2-2_amd64.deb
- f786d1beb377ccc0cf71ea8772d73d3b79f65982cf0c68c6fa7a532cac6b3bc2 5714 mosh_1.3.2-2_amd64.buildinfo
- 141fc7985a7a0e0626a40707fea0bd98808bc9078f550b861133630a8daf9df2 279796 mosh_1.3.2-2_amd64.deb
+ 33c182f5da31f4e1ced7270ca414462f9983782949fcd52f648239030f443ee4 2424808 mosh-dbgsym_1.3.2-2_amd64.deb
+ 8534569e25b7c0b9219a543d9b40bc45333eca19e16b8fc76d8435f2aecb92c3 5730 mosh_1.3.2-2_amd64.buildinfo
+ 0096af27175844d82289e413048a629e770bab82f7cee025a85e4c0bb0194485 281624 mosh_1.3.2-2_amd64.deb
 Files:
- 0713550da3c47caf88c276a955e29e9c 2422372 debug optional mosh-dbgsym_1.3.2-2_amd64.deb
- 3caa9ab9363506160289638f5f0fdb8c 5714 net optional mosh_1.3.2-2_amd64.buildinfo
- c412e1108bdf2a23de012dba690ee438 279796 net optional mosh_1.3.2-2_amd64.deb
+ 93e91f88850739f88f7ec535e8a0bf59 2424808 debug optional mosh-dbgsym_1.3.2-2_amd64.deb
+ 07b4e46b0a473273d9078bf617f25b24 5730 net optional mosh_1.3.2-2_amd64.buildinfo
+ 7d803b9c61214ddd1f3f623b4787174c 281624 net optional mosh_1.3.2-2_amd64.deb

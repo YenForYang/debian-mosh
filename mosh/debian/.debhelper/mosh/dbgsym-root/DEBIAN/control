@@ -4,9 +4,9 @@ Version: 1.3.2-2
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Keith Winstein <keithw@mit.edu>
-Installed-Size: 2637
+Installed-Size: 2640
 Depends: mosh (= 1.3.2-2)
 Section: debug
 Priority: optional
 Description: debug symbols for mosh
-Build-Ids: 1e9a405d0740c96bb7d1b86d0adde533f6446b0f 60b7ff145442ea7d43ff5da61ca164c3823445ba
+Build-Ids: c685668207e6d176f7b15ab06de2a7e62efee254 c770d5898e4a4d5db3c432a5a290f6b9ab020b25

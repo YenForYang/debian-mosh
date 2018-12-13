@@ -9,18 +9,18 @@ dpkg-buildpackage: info: host architecture amd64
 dh clean --parallel --with autoreconf
    dh_auto_clean -O--parallel
 	make -j8 distclean
-make[1]: Entering directory '/dev/shm/mosh/mosh'
+make[1]: Entering directory '/dev/shm/debian-mosh/mosh'
 Making distclean in scripts
-make[2]: Entering directory '/dev/shm/mosh/mosh/scripts'
+make[2]: Entering directory '/dev/shm/debian-mosh/mosh/scripts'
 test -z "mosh" || rm -f mosh
 test -z "" || rm -f 
 test . = "." || test -z "" || rm -f 
 rm -f Makefile
-make[2]: Leaving directory '/dev/shm/mosh/mosh/scripts'
+make[2]: Leaving directory '/dev/shm/debian-mosh/mosh/scripts'
 Making distclean in src
-make[2]: Entering directory '/dev/shm/mosh/mosh/src'
+make[2]: Entering directory '/dev/shm/debian-mosh/mosh/src'
 Making distclean in protobufs
-make[3]: Entering directory '/dev/shm/mosh/mosh/src/protobufs'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/src/protobufs'
 test -z "userinput.pb.cc hostinput.pb.cc transportinstruction.pb.cc userinput.pb.h hostinput.pb.h transportinstruction.pb.h" || rm -f userinput.pb.cc hostinput.pb.cc transportinstruction.pb.cc userinput.pb.h hostinput.pb.h transportinstruction.pb.h
 test -z "libmoshprotos.a" || rm -f libmoshprotos.a
 rm -f *.o
@@ -32,9 +32,9 @@ rm -f ./.deps/hostinput.pb.Po
 rm -f ./.deps/transportinstruction.pb.Po
 rm -f ./.deps/userinput.pb.Po
 rm -f Makefile
-make[3]: Leaving directory '/dev/shm/mosh/mosh/src/protobufs'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/src/protobufs'
 Making distclean in util
-make[3]: Entering directory '/dev/shm/mosh/mosh/src/util'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/src/util'
 test -z "libmoshutil.a" || rm -f libmoshutil.a
 rm -f *.o
 rm -f *.tab.c
@@ -47,9 +47,9 @@ rm -f ./.deps/select.Po
 rm -f ./.deps/swrite.Po
 rm -f ./.deps/timestamp.Po
 rm -f Makefile
-make[3]: Leaving directory '/dev/shm/mosh/mosh/src/util'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/src/util'
 Making distclean in crypto
-make[3]: Entering directory '/dev/shm/mosh/mosh/src/crypto'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/src/crypto'
 test -z "libmoshcrypto.a" || rm -f libmoshcrypto.a
 rm -f *.o
 rm -f *.tab.c
@@ -60,9 +60,9 @@ rm -f ./.deps/base64.Po
 rm -f ./.deps/crypto.Po
 rm -f ./.deps/ocb.Po
 rm -f Makefile
-make[3]: Leaving directory '/dev/shm/mosh/mosh/src/crypto'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/src/crypto'
 Making distclean in terminal
-make[3]: Entering directory '/dev/shm/mosh/mosh/src/terminal'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/src/terminal'
 test -z "libmoshterminal.a" || rm -f libmoshterminal.a
 rm -f *.o
 rm -f *.tab.c
@@ -80,9 +80,9 @@ rm -f ./.deps/terminalframebuffer.Po
 rm -f ./.deps/terminalfunctions.Po
 rm -f ./.deps/terminaluserinput.Po
 rm -f Makefile
-make[3]: Leaving directory '/dev/shm/mosh/mosh/src/terminal'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/src/terminal'
 Making distclean in network
-make[3]: Entering directory '/dev/shm/mosh/mosh/src/network'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/src/network'
 test -z "libmoshnetwork.a" || rm -f libmoshnetwork.a
 rm -f *.o
 rm -f *.tab.c
@@ -93,9 +93,9 @@ rm -f ./.deps/compressor.Po
 rm -f ./.deps/network.Po
 rm -f ./.deps/transportfragment.Po
 rm -f Makefile
-make[3]: Leaving directory '/dev/shm/mosh/mosh/src/network'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/src/network'
 Making distclean in statesync
-make[3]: Entering directory '/dev/shm/mosh/mosh/src/statesync'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/src/statesync'
 test -z "libmoshstatesync.a" || rm -f libmoshstatesync.a
 rm -f *.o
 rm -f *.tab.c
@@ -105,9 +105,9 @@ test . = "." || test -z "" || rm -f
 rm -f ./.deps/completeterminal.Po
 rm -f ./.deps/user.Po
 rm -f Makefile
-make[3]: Leaving directory '/dev/shm/mosh/mosh/src/statesync'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/src/statesync'
 Making distclean in frontend
-make[3]: Entering directory '/dev/shm/mosh/mosh/src/frontend'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/src/frontend'
 test -z "mosh-client mosh-server" || rm -f mosh-client mosh-server
 rm -f *.o
 rm -f *.tab.c
@@ -119,9 +119,9 @@ rm -f ./.deps/mosh-server.Po
 rm -f ./.deps/stmclient.Po
 rm -f ./.deps/terminaloverlay.Po
 rm -f Makefile
-make[3]: Leaving directory '/dev/shm/mosh/mosh/src/frontend'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/src/frontend'
 Making distclean in examples
-make[3]: Entering directory '/dev/shm/mosh/mosh/src/examples'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/src/examples'
 test -z "" || rm -f 
 rm -f *.o
 rm -f *.tab.c
@@ -135,9 +135,9 @@ rm -f ./.deps/ntester-ntester.Po
 rm -f ./.deps/parse-parse.Po
 rm -f ./.deps/termemu-termemu.Po
 rm -f Makefile
-make[3]: Leaving directory '/dev/shm/mosh/mosh/src/examples'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/src/examples'
 Making distclean in tests
-make[3]: Entering directory '/dev/shm/mosh/mosh/src/tests'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/src/tests'
 test -z "ocb-aes encrypt-decrypt base64 nonce-incr inpty is-utf8-locale" || rm -f ocb-aes encrypt-decrypt base64 nonce-incr inpty is-utf8-locale
 test -z "base64_vector.cc" || rm -f base64_vector.cc
 for i in e2e-success.test e2e-failure.test emulation-ascii-iso-8859.test emulation-80th-column.test emulation-attributes-vt100.test emulation-attributes-16color.test emulation-attributes-256color8.test emulation-attributes-256color248.test emulation-attributes-truecolor.test emulation-attributes-bce.test emulation-back-tab.test emulation-cursor-motion.test emulation-multiline-scroll.test emulation-scroll.test emulation-wrap-across-frames.test network-no-diff.test prediction-unicode.test pty-deadlock.test repeat.test repeat-with-input.test server-network-timeout.test server-signal-timeout.test window-resize.test unicode-combine-fallback-assert.test unicode-later-combining.test window-resize.test; do rm -rf $i.d/; done
@@ -159,39 +159,39 @@ rm -f ./.deps/nonce_incr-nonce-incr.Po
 rm -f ./.deps/ocb_aes-ocb-aes.Po
 rm -f ./.deps/ocb_aes-test_utils.Po
 rm -f Makefile
-make[3]: Leaving directory '/dev/shm/mosh/mosh/src/tests'
-make[3]: Entering directory '/dev/shm/mosh/mosh/src'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/src/tests'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/src'
 test -z "" || rm -f 
 rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
 test . = "." || test -z "" || rm -f 
-make[3]: Leaving directory '/dev/shm/mosh/mosh/src'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/src'
 rm -f Makefile
-make[2]: Leaving directory '/dev/shm/mosh/mosh/src'
+make[2]: Leaving directory '/dev/shm/debian-mosh/mosh/src'
 Making distclean in man
-make[2]: Entering directory '/dev/shm/mosh/mosh/man'
+make[2]: Entering directory '/dev/shm/debian-mosh/mosh/man'
 test -z "" || rm -f 
 test . = "." || test -z "" || rm -f 
 rm -f Makefile
-make[2]: Leaving directory '/dev/shm/mosh/mosh/man'
+make[2]: Leaving directory '/dev/shm/debian-mosh/mosh/man'
 Making distclean in conf
-make[2]: Entering directory '/dev/shm/mosh/mosh/conf'
+make[2]: Entering directory '/dev/shm/debian-mosh/mosh/conf'
 test -z "" || rm -f 
 test . = "." || test -z "" || rm -f 
 rm -f Makefile
-make[2]: Leaving directory '/dev/shm/mosh/mosh/conf'
-make[2]: Entering directory '/dev/shm/mosh/mosh'
+make[2]: Leaving directory '/dev/shm/debian-mosh/mosh/conf'
+make[2]: Entering directory '/dev/shm/debian-mosh/mosh'
 test -z "" || rm -f 
 rm -f config.h stamp-h1
 rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
 test . = "." || test -z "" || rm -f 
 rm -f cscope.out cscope.in.out cscope.po.out cscope.files
-make[2]: Leaving directory '/dev/shm/mosh/mosh'
+make[2]: Leaving directory '/dev/shm/debian-mosh/mosh'
 rm -f config.status config.cache config.log configure.lineno config.status.lineno
 rm -f Makefile
-make[1]: Leaving directory '/dev/shm/mosh/mosh'
+make[1]: Leaving directory '/dev/shm/debian-mosh/mosh'
    dh_autoreconf_clean -O--parallel
    dh_clean -O--parallel
-FAKEROOTKEY=463803688 LD_LIBRARY_PATH=:/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules clean
+FAKEROOTKEY=816323892 LD_LIBRARY_PATH=:/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules clean
  debian/rules build
 dh build --parallel --with autoreconf
    dh_update_autotools_config -O--parallel
@@ -203,7 +203,7 @@ configure.ac:6: installing './missing'
 src/crypto/Makefile.am: installing './depcomp'
 parallel-tests: installing './test-driver'
    debian/rules override_dh_auto_configure
-make[1]: Entering directory '/dev/shm/mosh/mosh'
+make[1]: Entering directory '/dev/shm/debian-mosh/mosh'
 dh_auto_configure -- \
 	--disable-silent-rules \
 	--enable-ufw \
@@ -409,132 +409,132 @@ configure: Warning CXXFLAGS:    -Wall
 configure: Picky CXXFLAGS:      
 configure: Harden CFLAGS:        -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE
 configure:  =============================
-make[1]: Leaving directory '/dev/shm/mosh/mosh'
+make[1]: Leaving directory '/dev/shm/debian-mosh/mosh'
    dh_auto_build -O--parallel
 	make -j8
-make[1]: Entering directory '/dev/shm/mosh/mosh'
+make[1]: Entering directory '/dev/shm/debian-mosh/mosh'
 make  all-recursive
-make[2]: Entering directory '/dev/shm/mosh/mosh'
+make[2]: Entering directory '/dev/shm/debian-mosh/mosh'
 Making all in scripts
-make[3]: Entering directory '/dev/shm/mosh/mosh/scripts'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/scripts'
 perl -Mdiagnostics -c ./mosh.pl
 ./mosh.pl syntax OK
-make[3]: Leaving directory '/dev/shm/mosh/mosh/scripts'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/scripts'
 Making all in src
-make[3]: Entering directory '/dev/shm/mosh/mosh/src'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/src'
 Making all in protobufs
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/protobufs'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/protobufs'
 /usr/bin/protoc --cpp_out=. -I. userinput.proto
 /usr/bin/protoc --cpp_out=. -I. hostinput.proto
 /usr/bin/protoc --cpp_out=. -I. transportinstruction.proto
 make  all-am
-make[5]: Entering directory '/dev/shm/mosh/mosh/src/protobufs'
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -Wno-error -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o userinput.pb.o userinput.pb.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -Wno-error -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o hostinput.pb.o hostinput.pb.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -Wno-error -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o transportinstruction.pb.o transportinstruction.pb.cc
+make[5]: Entering directory '/dev/shm/debian-mosh/mosh/src/protobufs'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -Wno-error -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o userinput.pb.o userinput.pb.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -Wno-error -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o hostinput.pb.o hostinput.pb.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -Wno-error -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o transportinstruction.pb.o transportinstruction.pb.cc
 rm -f libmoshprotos.a
 xiar cru libmoshprotos.a  userinput.pb.o hostinput.pb.o transportinstruction.pb.o  
 xiar: executing 'ar'
 ar: `u' modifier ignored since `D' is the default (see `U')
 /usr/bin/x86_64-linux-gnu-ranlib libmoshprotos.a
-make[5]: Leaving directory '/dev/shm/mosh/mosh/src/protobufs'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/protobufs'
+make[5]: Leaving directory '/dev/shm/debian-mosh/mosh/src/protobufs'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/protobufs'
 Making all in util
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/util'
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o locale_utils.o locale_utils.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o swrite.o swrite.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o select.o select.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o timestamp.o timestamp.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o pty_compat.o pty_compat.cc
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/util'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o locale_utils.o locale_utils.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o swrite.o swrite.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o select.o select.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o timestamp.o timestamp.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..   -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o pty_compat.o pty_compat.cc
 rm -f libmoshutil.a
 xiar cru libmoshutil.a locale_utils.o swrite.o select.o timestamp.o pty_compat.o 
 xiar: executing 'ar'
 ar: `u' modifier ignored since `D' is the default (see `U')
 /usr/bin/x86_64-linux-gnu-ranlib libmoshutil.a
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/util'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/util'
 Making all in crypto
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/crypto'
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o ocb.o ocb.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o base64.o base64.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o crypto.o crypto.cc
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/crypto'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o ocb.o ocb.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o base64.o base64.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o crypto.o crypto.cc
 rm -f libmoshcrypto.a
 xiar cru libmoshcrypto.a ocb.o base64.o crypto.o 
 xiar: executing 'ar'
 ar: `u' modifier ignored since `D' is the default (see `U')
 /usr/bin/x86_64-linux-gnu-ranlib libmoshcrypto.a
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/crypto'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/crypto'
 Making all in terminal
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/terminal'
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o parseraction.o parseraction.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o parser.o parser.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o parserstate.o parserstate.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminal.o terminal.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminaldispatcher.o terminaldispatcher.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminaldisplay.o terminaldisplay.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminaldisplayinit.o terminaldisplayinit.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminalframebuffer.o terminalframebuffer.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminalfunctions.o terminalfunctions.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminaluserinput.o terminaluserinput.cc
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/terminal'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o parseraction.o parseraction.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o parser.o parser.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o parserstate.o parserstate.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o terminal.o terminal.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o terminaldispatcher.o terminaldispatcher.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o terminaldisplay.o terminaldisplay.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o terminaldisplayinit.o terminaldisplayinit.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o terminalframebuffer.o terminalframebuffer.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o terminalfunctions.o terminalfunctions.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o terminaluserinput.o terminaluserinput.cc
 rm -f libmoshterminal.a
 xiar cru libmoshterminal.a parseraction.o parser.o parserstate.o terminal.o terminaldispatcher.o terminaldisplay.o terminaldisplayinit.o terminalframebuffer.o terminalfunctions.o terminaluserinput.o 
 xiar: executing 'ar'
 ar: `u' modifier ignored since `D' is the default (see `U')
 /usr/bin/x86_64-linux-gnu-ranlib libmoshterminal.a
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/terminal'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/terminal'
 Making all in network
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/network'
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../crypto -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o network.o network.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../crypto -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o transportfragment.o transportfragment.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../crypto -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o compressor.o compressor.cc
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/network'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../crypto -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o network.o network.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../crypto -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o transportfragment.o transportfragment.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../crypto -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o compressor.o compressor.cc
 rm -f libmoshnetwork.a
 xiar cru libmoshnetwork.a network.o transportfragment.o compressor.o 
 xiar: executing 'ar'
 ar: `u' modifier ignored since `D' is the default (see `U')
 /usr/bin/x86_64-linux-gnu-ranlib libmoshnetwork.a
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/network'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/network'
 Making all in statesync
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/statesync'
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../terminal -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o completeterminal.o completeterminal.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../terminal -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o user.o user.cc
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/statesync'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../terminal -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o completeterminal.o completeterminal.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../util -I./../terminal -I../protobufs -pthread -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o user.o user.cc
 rm -f libmoshstatesync.a
 xiar cru libmoshstatesync.a completeterminal.o user.o 
 xiar: executing 'ar'
 ar: `u' modifier ignored since `D' is the default (see `U')
 /usr/bin/x86_64-linux-gnu-ranlib libmoshstatesync.a
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/statesync'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/statesync'
 Making all in frontend
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/frontend'
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../statesync -I./../terminal -I./../network -I./../crypto -I../protobufs -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -pthread  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o mosh-client.o mosh-client.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../statesync -I./../terminal -I./../network -I./../crypto -I../protobufs -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -pthread  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o stmclient.o stmclient.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../statesync -I./../terminal -I./../network -I./../crypto -I../protobufs -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -pthread  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o terminaloverlay.o terminaloverlay.cc
-icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../statesync -I./../terminal -I./../network -I./../crypto -I../protobufs -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -pthread  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -c -o mosh-server.o mosh-server.cc
-icpc -std=c++11 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -pie -Wl,-z,relro -Wl,-z,now -Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax -o mosh-client mosh-client.o stmclient.o terminaloverlay.o ../crypto/libmoshcrypto.a ../network/libmoshnetwork.a ../statesync/libmoshstatesync.a ../terminal/libmoshterminal.a ../util/libmoshutil.a ../protobufs/libmoshprotos.a -lm -ltinfo -lprotobuf -pthread -lssl -lcrypto -lutil -lz -lutempter 
-icpc -std=c++11 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe -pie -Wl,-z,relro -Wl,-z,now -Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax -o mosh-server mosh-server.o ../crypto/libmoshcrypto.a ../network/libmoshnetwork.a ../statesync/libmoshstatesync.a ../terminal/libmoshterminal.a ../util/libmoshutil.a ../protobufs/libmoshprotos.a -lm -ltinfo -lprotobuf -pthread -lssl -lcrypto -lutil -lz -lutempter 
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/frontend'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/frontend'
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../statesync -I./../terminal -I./../network -I./../crypto -I../protobufs -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -pthread  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o mosh-client.o mosh-client.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../statesync -I./../terminal -I./../network -I./../crypto -I../protobufs -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -pthread  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o stmclient.o stmclient.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../statesync -I./../terminal -I./../network -I./../crypto -I../protobufs -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -pthread  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o terminaloverlay.o terminaloverlay.cc
+icpc -std=c++11 -DHAVE_CONFIG_H -I. -I../..  -I./../statesync -I./../terminal -I./../network -I./../crypto -I../protobufs -I./../util -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -pthread  -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -c -o mosh-server.o mosh-server.cc
+icpc -std=c++11 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -pie -Wl,-z,relro -Wl,-z,now -Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax -o mosh-client mosh-client.o stmclient.o terminaloverlay.o ../crypto/libmoshcrypto.a ../network/libmoshnetwork.a ../statesync/libmoshstatesync.a ../terminal/libmoshterminal.a ../util/libmoshutil.a ../protobufs/libmoshprotos.a -lm -ltinfo -lprotobuf -pthread -lssl -lcrypto -lutil -lz -lutempter 
+icpc -std=c++11 -Wall  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector --param ssp-buffer-size=1 -fPIE -fno-default-inline -pipe -g -O2 -fdebug-prefix-map=/dev/shm/debian-mosh/mosh=. -Wformat -Werror=format-security -march=native -pipe  -pie -Wl,-z,relro -Wl,-z,now -Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax -o mosh-server mosh-server.o ../crypto/libmoshcrypto.a ../network/libmoshnetwork.a ../statesync/libmoshstatesync.a ../terminal/libmoshterminal.a ../util/libmoshutil.a ../protobufs/libmoshprotos.a -lm -ltinfo -lprotobuf -pthread -lssl -lcrypto -lutil -lz -lutempter 
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/frontend'
 Making all in examples
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/examples'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/examples'
 make[4]: Nothing to be done for 'all'.
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/examples'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/examples'
 Making all in tests
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/tests'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/tests'
 make[4]: Nothing to be done for 'all'.
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/tests'
-make[4]: Entering directory '/dev/shm/mosh/mosh/src'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/tests'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src'
 make[4]: Nothing to be done for 'all-am'.
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src'
-make[3]: Leaving directory '/dev/shm/mosh/mosh/src'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/src'
 Making all in man
-make[3]: Entering directory '/dev/shm/mosh/mosh/man'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/man'
 make[3]: Nothing to be done for 'all'.
-make[3]: Leaving directory '/dev/shm/mosh/mosh/man'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/man'
 Making all in conf
-make[3]: Entering directory '/dev/shm/mosh/mosh/conf'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/conf'
 make[3]: Nothing to be done for 'all'.
-make[3]: Leaving directory '/dev/shm/mosh/mosh/conf'
-make[3]: Entering directory '/dev/shm/mosh/mosh'
-make[3]: Leaving directory '/dev/shm/mosh/mosh'
-make[2]: Leaving directory '/dev/shm/mosh/mosh'
-make[1]: Leaving directory '/dev/shm/mosh/mosh'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/conf'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh'
+make[2]: Leaving directory '/dev/shm/debian-mosh/mosh'
+make[1]: Leaving directory '/dev/shm/debian-mosh/mosh'
    dh_auto_test -O--parallel
  fakeroot debian/rules binary
 dh binary --parallel --with autoreconf
@@ -543,120 +543,120 @@ dh binary --parallel --with autoreconf
    dh_prep -O--parallel
    dh_installdirs -O--parallel
    dh_auto_install -O--parallel
-	make -j8 install DESTDIR=/dev/shm/mosh/mosh/debian/mosh AM_UPDATE_INFO_DIR=no
-make[1]: Entering directory '/dev/shm/mosh/mosh'
+	make -j8 install DESTDIR=/dev/shm/debian-mosh/mosh/debian/mosh AM_UPDATE_INFO_DIR=no
+make[1]: Entering directory '/dev/shm/debian-mosh/mosh'
 make  install-recursive
-make[2]: Entering directory '/dev/shm/mosh/mosh'
+make[2]: Entering directory '/dev/shm/debian-mosh/mosh'
 Making install in scripts
-make[3]: Entering directory '/dev/shm/mosh/mosh/scripts'
-make[4]: Entering directory '/dev/shm/mosh/mosh/scripts'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/scripts'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/scripts'
 make[4]: Nothing to be done for 'install-data-am'.
- /bin/mkdir -p '/dev/shm/mosh/mosh/debian/mosh/usr/bin'
- /usr/bin/install mosh '/dev/shm/mosh/mosh/debian/mosh/usr/bin'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/scripts'
-make[3]: Leaving directory '/dev/shm/mosh/mosh/scripts'
+ /bin/mkdir -p '/dev/shm/debian-mosh/mosh/debian/mosh/usr/bin'
+ /usr/bin/install mosh '/dev/shm/debian-mosh/mosh/debian/mosh/usr/bin'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/scripts'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/scripts'
 Making install in src
-make[3]: Entering directory '/dev/shm/mosh/mosh/src'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/src'
 Making install in protobufs
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/protobufs'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/protobufs'
 make  install-am
-make[5]: Entering directory '/dev/shm/mosh/mosh/src/protobufs'
-make[6]: Entering directory '/dev/shm/mosh/mosh/src/protobufs'
+make[5]: Entering directory '/dev/shm/debian-mosh/mosh/src/protobufs'
+make[6]: Entering directory '/dev/shm/debian-mosh/mosh/src/protobufs'
 make[6]: Nothing to be done for 'install-exec-am'.
 make[6]: Nothing to be done for 'install-data-am'.
-make[6]: Leaving directory '/dev/shm/mosh/mosh/src/protobufs'
-make[5]: Leaving directory '/dev/shm/mosh/mosh/src/protobufs'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/protobufs'
+make[6]: Leaving directory '/dev/shm/debian-mosh/mosh/src/protobufs'
+make[5]: Leaving directory '/dev/shm/debian-mosh/mosh/src/protobufs'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/protobufs'
 Making install in util
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/util'
-make[5]: Entering directory '/dev/shm/mosh/mosh/src/util'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/util'
+make[5]: Entering directory '/dev/shm/debian-mosh/mosh/src/util'
 make[5]: Nothing to be done for 'install-exec-am'.
 make[5]: Nothing to be done for 'install-data-am'.
-make[5]: Leaving directory '/dev/shm/mosh/mosh/src/util'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/util'
+make[5]: Leaving directory '/dev/shm/debian-mosh/mosh/src/util'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/util'
 Making install in crypto
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/crypto'
-make[5]: Entering directory '/dev/shm/mosh/mosh/src/crypto'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/crypto'
+make[5]: Entering directory '/dev/shm/debian-mosh/mosh/src/crypto'
 make[5]: Nothing to be done for 'install-exec-am'.
 make[5]: Nothing to be done for 'install-data-am'.
-make[5]: Leaving directory '/dev/shm/mosh/mosh/src/crypto'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/crypto'
+make[5]: Leaving directory '/dev/shm/debian-mosh/mosh/src/crypto'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/crypto'
 Making install in terminal
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/terminal'
-make[5]: Entering directory '/dev/shm/mosh/mosh/src/terminal'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/terminal'
+make[5]: Entering directory '/dev/shm/debian-mosh/mosh/src/terminal'
 make[5]: Nothing to be done for 'install-exec-am'.
 make[5]: Nothing to be done for 'install-data-am'.
-make[5]: Leaving directory '/dev/shm/mosh/mosh/src/terminal'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/terminal'
+make[5]: Leaving directory '/dev/shm/debian-mosh/mosh/src/terminal'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/terminal'
 Making install in network
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/network'
-make[5]: Entering directory '/dev/shm/mosh/mosh/src/network'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/network'
+make[5]: Entering directory '/dev/shm/debian-mosh/mosh/src/network'
 make[5]: Nothing to be done for 'install-exec-am'.
 make[5]: Nothing to be done for 'install-data-am'.
-make[5]: Leaving directory '/dev/shm/mosh/mosh/src/network'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/network'
+make[5]: Leaving directory '/dev/shm/debian-mosh/mosh/src/network'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/network'
 Making install in statesync
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/statesync'
-make[5]: Entering directory '/dev/shm/mosh/mosh/src/statesync'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/statesync'
+make[5]: Entering directory '/dev/shm/debian-mosh/mosh/src/statesync'
 make[5]: Nothing to be done for 'install-exec-am'.
 make[5]: Nothing to be done for 'install-data-am'.
-make[5]: Leaving directory '/dev/shm/mosh/mosh/src/statesync'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/statesync'
+make[5]: Leaving directory '/dev/shm/debian-mosh/mosh/src/statesync'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/statesync'
 Making install in frontend
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/frontend'
-make[5]: Entering directory '/dev/shm/mosh/mosh/src/frontend'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/frontend'
+make[5]: Entering directory '/dev/shm/debian-mosh/mosh/src/frontend'
 make[5]: Nothing to be done for 'install-data-am'.
- /bin/mkdir -p '/dev/shm/mosh/mosh/debian/mosh/usr/bin'
-  /usr/bin/install mosh-client mosh-server '/dev/shm/mosh/mosh/debian/mosh/usr/bin'
-make[5]: Leaving directory '/dev/shm/mosh/mosh/src/frontend'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/frontend'
+ /bin/mkdir -p '/dev/shm/debian-mosh/mosh/debian/mosh/usr/bin'
+  /usr/bin/install mosh-client mosh-server '/dev/shm/debian-mosh/mosh/debian/mosh/usr/bin'
+make[5]: Leaving directory '/dev/shm/debian-mosh/mosh/src/frontend'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/frontend'
 Making install in examples
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/examples'
-make[5]: Entering directory '/dev/shm/mosh/mosh/src/examples'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/examples'
+make[5]: Entering directory '/dev/shm/debian-mosh/mosh/src/examples'
 make[5]: Nothing to be done for 'install-exec-am'.
 make[5]: Nothing to be done for 'install-data-am'.
-make[5]: Leaving directory '/dev/shm/mosh/mosh/src/examples'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/examples'
+make[5]: Leaving directory '/dev/shm/debian-mosh/mosh/src/examples'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/examples'
 Making install in tests
-make[4]: Entering directory '/dev/shm/mosh/mosh/src/tests'
-make[5]: Entering directory '/dev/shm/mosh/mosh/src/tests'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src/tests'
+make[5]: Entering directory '/dev/shm/debian-mosh/mosh/src/tests'
 make[5]: Nothing to be done for 'install-exec-am'.
 make[5]: Nothing to be done for 'install-data-am'.
-make[5]: Leaving directory '/dev/shm/mosh/mosh/src/tests'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src/tests'
-make[4]: Entering directory '/dev/shm/mosh/mosh/src'
-make[5]: Entering directory '/dev/shm/mosh/mosh/src'
+make[5]: Leaving directory '/dev/shm/debian-mosh/mosh/src/tests'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src/tests'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/src'
+make[5]: Entering directory '/dev/shm/debian-mosh/mosh/src'
 make[5]: Nothing to be done for 'install-exec-am'.
 make[5]: Nothing to be done for 'install-data-am'.
-make[5]: Leaving directory '/dev/shm/mosh/mosh/src'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/src'
-make[3]: Leaving directory '/dev/shm/mosh/mosh/src'
+make[5]: Leaving directory '/dev/shm/debian-mosh/mosh/src'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/src'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/src'
 Making install in man
-make[3]: Entering directory '/dev/shm/mosh/mosh/man'
-make[4]: Entering directory '/dev/shm/mosh/mosh/man'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/man'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/man'
 make[4]: Nothing to be done for 'install-exec-am'.
- /bin/mkdir -p '/dev/shm/mosh/mosh/debian/mosh/usr/share/man/man1'
- /usr/bin/install -m 644 mosh.1 mosh-client.1 mosh-server.1 '/dev/shm/mosh/mosh/debian/mosh/usr/share/man/man1'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/man'
-make[3]: Leaving directory '/dev/shm/mosh/mosh/man'
+ /bin/mkdir -p '/dev/shm/debian-mosh/mosh/debian/mosh/usr/share/man/man1'
+ /usr/bin/install -m 644 mosh.1 mosh-client.1 mosh-server.1 '/dev/shm/debian-mosh/mosh/debian/mosh/usr/share/man/man1'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/man'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/man'
 Making install in conf
-make[3]: Entering directory '/dev/shm/mosh/mosh/conf'
-make[4]: Entering directory '/dev/shm/mosh/mosh/conf'
- /bin/mkdir -p '/dev/shm/mosh/mosh/debian/mosh/etc'
- /bin/mkdir -p '/dev/shm/mosh/mosh/debian/mosh/usr/share/bash-completion/completions'
- /usr/bin/install -m 644 bash-completion/completions/mosh '/dev/shm/mosh/mosh/debian/mosh/usr/share/bash-completion/completions'
- /bin/mkdir -p '/dev/shm/mosh/mosh/debian/mosh/etc/ufw/applications.d'
- /usr/bin/install -m 644  ufw/applications.d/mosh '/dev/shm/mosh/mosh/debian/mosh/etc/ufw/applications.d'
-make[4]: Leaving directory '/dev/shm/mosh/mosh/conf'
-make[3]: Leaving directory '/dev/shm/mosh/mosh/conf'
-make[3]: Entering directory '/dev/shm/mosh/mosh'
-make[4]: Entering directory '/dev/shm/mosh/mosh'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh/conf'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh/conf'
+ /bin/mkdir -p '/dev/shm/debian-mosh/mosh/debian/mosh/etc'
+ /bin/mkdir -p '/dev/shm/debian-mosh/mosh/debian/mosh/usr/share/bash-completion/completions'
+ /usr/bin/install -m 644 bash-completion/completions/mosh '/dev/shm/debian-mosh/mosh/debian/mosh/usr/share/bash-completion/completions'
+ /bin/mkdir -p '/dev/shm/debian-mosh/mosh/debian/mosh/etc/ufw/applications.d'
+ /usr/bin/install -m 644  ufw/applications.d/mosh '/dev/shm/debian-mosh/mosh/debian/mosh/etc/ufw/applications.d'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh/conf'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh/conf'
+make[3]: Entering directory '/dev/shm/debian-mosh/mosh'
+make[4]: Entering directory '/dev/shm/debian-mosh/mosh'
 make[4]: Nothing to be done for 'install-exec-am'.
 make[4]: Nothing to be done for 'install-data-am'.
-make[4]: Leaving directory '/dev/shm/mosh/mosh'
-make[3]: Leaving directory '/dev/shm/mosh/mosh'
-make[2]: Leaving directory '/dev/shm/mosh/mosh'
-make[1]: Leaving directory '/dev/shm/mosh/mosh'
+make[4]: Leaving directory '/dev/shm/debian-mosh/mosh'
+make[3]: Leaving directory '/dev/shm/debian-mosh/mosh'
+make[2]: Leaving directory '/dev/shm/debian-mosh/mosh'
+make[1]: Leaving directory '/dev/shm/debian-mosh/mosh'
    dh_install -O--parallel
    dh_installdocs -O--parallel
    dh_installchangelogs -O--parallel
@@ -685,10 +685,10 @@ make[1]: Leaving directory '/dev/shm/mosh/mosh'
 dh_gconf: Please migrate to dh_installgsettings; gconf + dh_gconf is scheduled for removal.
    dh_icons -O--parallel
    debian/rules override_dh_perl
-make[1]: Entering directory '/dev/shm/mosh/mosh'
+make[1]: Entering directory '/dev/shm/debian-mosh/mosh'
 # mosh only uses Perl modules in perl-base.
 dh_perl -d
-make[1]: Leaving directory '/dev/shm/mosh/mosh'
+make[1]: Leaving directory '/dev/shm/debian-mosh/mosh'
    dh_usrlocal -O--parallel
    dh_link -O--parallel
    dh_installwm -O--parallel
@@ -709,14 +709,14 @@ dpkg-shlibdeps: warning: can't extract name and version from library name 'libio
 dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
 dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
 dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
-dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/mosh/usr/bin/mosh-client debian/mosh/usr/bin/mosh-server were not linked against libdl.so.2 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/mosh/usr/bin/mosh-server debian/mosh/usr/bin/mosh-client were not linked against libdl.so.2 (they use none of the library's symbols)
    dh_installdeb -O--parallel
    dh_gencontrol -O--parallel
    dh_md5sums -O--parallel
    dh_builddeb -O--parallel
 dpkg-deb: building package 'mosh' in '../mosh_1.3.2-2_amd64.deb'.
 dpkg-deb: building package 'mosh-dbgsym' in '../mosh-dbgsym_1.3.2-2_amd64.deb'.
-FAKEROOTKEY=931255088 LD_LIBRARY_PATH=:/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules binary
+FAKEROOTKEY=2089937738 LD_LIBRARY_PATH=:/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules binary
  dpkg-genbuildinfo --build=binary
  dpkg-genchanges --build=binary >../mosh_1.3.2-2_amd64.changes
 dpkg-genchanges: info: binary-only upload (no source code included)
